@@ -10,13 +10,11 @@ for(let i=1;i<totalSquares;i++){
     container.appendChild(square);
 }
 
-let getRandomColor = () =>{
-    return colors[Math.floor(Math.random()*colors.length)];
-}
+
 let setColor = (item) =>  {
-    let color = getRandomColor();
+    let color = '#0f0';
     item.style.backgroundColor = color;
-    item.style.boxShadow = `0 0 2px ${color},0 0 10px ${color}`;
+    item.style.boxShadow = `0 0 4px ${color}`;
 }
 let removeColor = (item) =>{
     item.style.backgroundColor = `#1d1d1d`;
