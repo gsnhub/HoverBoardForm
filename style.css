@@ -1,1 +1,30 @@
+:root{
+    --color:#0f0;
+    --bg:#121212;
+}
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: var(--bg);
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.squareCSS{
+    width:50px;
+    height: 50px;
+    background-color: #333;
+    transition:;
+}
