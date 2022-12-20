@@ -17,14 +17,38 @@ body{
 .container{
     width:100vw;
     height:100vh;
-    background-color: var(--bg);
+    background-color: transparent;
     display:flex;
     flex-wrap: wrap;
     gap: 5px;
+    overflow:hidden
 }
-.squareCSS{
-    width:50px;
+
+.squareCSS {
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
     height: 50px;
-    background-color: #333;
-    transition:;
-}
+    width: 50px;
+    transition: 3s ease;
+  }
+  
+  .squareCSS:hover {
+    transition-duration: 0s;
+  }
+
+  #bgslide{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(#000,#0f0,#000);
+    z-index:-1;
+    animation:slide 3s linear infinite;
+  }
+  @keyframes slide {
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(100%);
+    }
+  }
