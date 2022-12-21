@@ -28,8 +28,8 @@ body{
 .squareCSS {
     background-color: #1d1d1d;
     box-shadow: 0 0 2px #000;
-    height: 10vh;
-    width: 5vw;
+    height: calc(6.25vw - 2px);
+    width: calc(6.25vw - 2px);
     transition: 3s ease;
   }
   
