@@ -1,5 +1,4 @@
 const container = document.querySelector('.container');
-const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
 const totalSquares = 15000;
 
 for(let i=1;i<totalSquares;i++){
@@ -9,7 +8,6 @@ for(let i=1;i<totalSquares;i++){
     square.addEventListener('mouseout',() => removeColor(square));
     container.appendChild(square);
 }
-
 
 let setColor = (item) =>  {
     let color = '#0f0';
